@@ -3,6 +3,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+body, html{
+  scroll-behavior: smooth;
+ overflow-x: hidden;
+ max-width: 100%;
+
+  
+ 
+}
 .navbar{
     background-color: #fff;
 }
@@ -17,12 +25,20 @@
 }
 /*main section start*/
 .main{
-   background: url(images/IMG_20240108_155507_096_-1336744786-removebg.png);
+   background: url(images/IMG_20240108_155507_97-removebg-preview.png) no-repeat center center/cover;
    background-size: cover;
    width: 100%;
-   height: 90vh;
-   margin-top: -90px;
+   height: 100vh;
+   margin-bottom: 150px;
+  
+   overflow-x: hidden;
+   background-position: center;
+   display: flex;
+   align-items: center;
+   padding: 20px;
+   justify-content: center;
 }
+
 .main h3{
     font-size: 60px;
     font-weight: 700;
@@ -39,6 +55,7 @@
     color: #fff;
     height: 56px;
     width: 200px;
+   
 
 }
 .bt2:hover{
@@ -71,12 +88,12 @@ span{
     color:  rgb(156, 11, 71);
     font-weight: 700;
 }
-.about img{
-box-shadow: -35px -51px 59px -24px rgba(0,0,0,0.45);
--webkit-box-shadow: -35px -51px 59px -24px rgba(0,0,0,0.45);
--moz-box-shadow: -35px -51px 59px -24px rgba(0,0,0,0.45);
-    height: 100vh;
+.about img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: -35px -51px 59px -24px rgba(0,0,0,0.45);
 }
+
 h1{
     font-weight: 900;
     font-size: 3rem;
@@ -90,36 +107,104 @@ h1{
     display: flex;
     height: 25px;
     width: 100%;
+    color: #fff;
 }
 .pro-value1{
-    animation: load1 3s normal forwards;
     border-radius: 50px;
-    background-color: #000;
+    background-color:  rgb(156, 11, 71);
     height: 25px;
     width: 0;
-    padding: 4px;
+     padding: 0 4px;
+     animation: fill90 2s forwards;
+     display: flex;
+     position: relative;
 }
 .pro-value2{
-    animation: load2 2s normal forwards;
     border-radius: 50px;
-    background-color: #000;
+    background-color:  rgb(156, 11, 71);
     height: 25px;
     width: 0;
     padding: 4px;
+     animation: fill60 2s forwards;
+     display: flex;
+     position: relative;
 }
 .pro-value3{
-    animation: load3 2s ease-in-out forwards;
     border-radius: 50px;
-    background-color: #000;
+    background-color:  rgb(156, 11, 71);
+    height: 25px;
+    width: 0;
+    padding: 0 4px;
+     animation: fill85 2s forwards;
+     display: flex;
+     position: relative;
+}
+.pro-value4{
+    border-radius: 50px;
+    background-color:  rgb(156, 11, 71);;
     height: 25px;
     width: 0;
     padding: 4px;
+     animation: fill50 2s forwards;
+     display: flex;
+     position: relative;
 }
-.progress{
-    color: #fff;
-  
+.pro-value5{
+    border-radius: 50px;
+    background-color:  rgb(156, 11, 71);
+    height: 25px;
+    width: 0;
+     animation: fill49 2s forwards;
+     display: flex;
+     position: relative;
 }
-@keyframes load1{
+.pro-value6{
+    border-radius: 50px;
+    background-color:  rgb(156, 11, 71);
+    height: 25px;
+    width: 0;
+    padding: 4px;
+    animation: fill90 2s forwards;
+     display: flex;
+     position: relative;
+}
+ .float-right{
+  position: absolute;
+  left: 10px;
+  color: white;
+  animation: moveText 2s forwards;
+}
+/* @key frames */
+
+@keyframes fill90 {
+  to {
+    width: 90%;
+  }
+}
+@keyframes fill60 {
+  to {
+    width: 60%;
+  }
+}
+@keyframes fill85 {
+  to {
+    width: 85%;
+  }
+}
+@keyframes fill50 {
+  to {
+    width: 50%;
+  }
+}
+@keyframes fill49 {
+  to {
+    width: 49%;
+  }
+}
+
+
+
+@keyframes load6{
     0%{
         width: 0;
     }
@@ -127,25 +212,18 @@ h1{
         width: 95%;
     }
 }
-@keyframes load2{
-    0%{
-        width: 0;
-    }
-    100%{
-        width: 60%;
-    }
-}
-@keyframes load3{
-    0%{
-        width: 0;
-    }
-    100%{
-        width: 85%;
-    }
+@keyframes moveText {
+  to {
+    left: 90%;
+  }
 }
 .text-white{
     color: #fff;
+     z-index: 2;
+  position: absolute;
+  left: 10px;
 }
+
 .btn1 {
     height: 40px;
     width: 150px;
@@ -157,4 +235,121 @@ h1{
 }
 .btn1:hover{
     background-color: rgb(117, 4, 51);
+}
+/* services section */
+.fa-solid{
+  font-size: 30px;
+
+  
+}
+.circle{
+  align-self: center;
+  height: 60px;
+  width: 60px;
+  color: #000;
+  padding: 12px;
+  background-color: lightgrey;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 30px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  
+}
+.card{
+  border: none;
+  outline: none;
+ box-shadow: -32px -17px 100px 23px rgba(0,0,0,0.15);
+-webkit-box-shadow: -32px -17px 100px 23px rgba(0,0,0,0.15);
+-moz-box-shadow: -32px -17px 100px 23px rgba(0,0,0,0.15);
+}
+.card p{
+  columns: grey;
+}
+.card:hover{
+  transform: scale(1.1);
+}
+.bt3{
+  background-color: rgb(233,20,109);
+  color: #fff;
+  font-weight: 700;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+}
+.fa-brands{
+  font-size: 22px;
+   transition: transform 0.3s ease;
+   color: rgb(233,20,109);
+}
+
+.fa-brands:hover{
+  transform: scale(1.3);
+
+}
+.fa-solid{
+  color: rgb(233,20,109);
+  margin-left: 60px;
+}
+.bt3:hover{
+  background-color: rgb(160, 7, 71);
+}
+/*copy*/
+.copy{
+  text-align: center;
+  margin: 10px;
+ 
+}
+.fa-regular{
+  color: rgb(233,20,109);
+}
+
+/*css for smaller screens*/
+@media only screen and (max-width: 768px) {
+  .main{
+    background-image: url(images/IMG_20240108_155518_324-removebg-preview.png);
+    height: 100vh;
+    
+  }
+  .main h3 {
+    font-size: 20px;
+    text-align: center;
+    margin-right: 140px;
+    margin-top: 20px;
+  }
+  textarea{
+    width: 280px;
+  }
+ h1,p{
+  margin-left: 40px;
+ }
+ .fa-brands{
+  margin-left: 30px;
+ }
+
+  .main h6 {
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    padding-right: 140px;
+    font-size: 20px;
+  }
+  
+
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: -150px;
+  }
+
+  .col-lg-5, .col-lg-6, .col-lg-7 {
+    width: 100%;
+  }
 }

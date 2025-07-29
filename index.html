@@ -2,9 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" ...>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.rtl.min.css" integrity="sha384-Xbg45MqvDIk1e563NLpGEulpX6AvL404DP+/iCgW9eFa2BqztiwTexswJo2jLMue" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
 
     <title>Edward Mbatha</title>
@@ -17,41 +19,43 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-     <div class="navbar-nav">
+    
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+       <div class="navbar-nav ms-auto">
 
         <a class="nav-link active px-lg-4" aria-current="page" href="#">Home</a>
-        <a class="nav-link px-lg-4" href="#">About </a>
-        <a class="nav-link px-lg-4" href="#">Services</a>
-        <a class="nav-link px-lg-4" href="#">Skills </a>
-        <a class="nav-link px-lg-4" href="#">Porfolio </a>
-        <a class="nav-link px-lg-4" href="#">Contact</a>
+        <a class="nav-link px-lg-4" href="#about">About </a>
+        <a class="nav-link px-lg-4" href="#services">Services</a>
+        <a class="nav-link px-lg-4" href="#skills">Skills </a>
+        <a class="nav-link px-lg-4" href="#Porfolio">Porfolio </a>
+        <a class="nav-link px-lg-4" href="#contact">Contact</a>
         <a class="nav-link px-lg-4" href="https://calendly.com/mbathaedward11/A-new-meeting"><button class="bt2">BookAppointmentNow</button></a>
-        </div>
-
+      </div>  
       </div>
+
+      
     </div>
   </div>
 </nav>
 <!--main sectio start-->
-<div class="main py-5">
+<div class="main py-1">
     <div class="container py-5">
         <div class="row py-5">
-            <div class="col-lg-6 py-5">
+            <div class="col-lg-6 py-1">
                 <h3><small>HI,i’m</small><br>Edward Mbatha</h3>
-                <h6 class="pt-3">Web Developer</h6>
-                <input type="button" value="my work" class="bt1 mt-5">
-                <input type="button" value="Hire me" class="bt1 mt-5 me-3">
+                <h6 class="pt-2">Web Developer</h6>
+              <a href="#Porfolio"><input type="button" value="my work" class="bt1 mt-2"></a>  
+              <a href="#contact" ><input type="button" value="Hire me" class="bt1 mt-2 me-3"></a>
             </div>
         </div>
     </div>
 </div>
 <!---about section-->
-<div class="about py-5">
+<div class="about py-5" id="about">
   <div class="container py-5">
     <div class="row py-5">
       <div class="col-lg-5">
-        <img src="images/IMG_20240519_115640_778_32741831-removebg-preview.png" class="image-fluid">
+        <img src="images/IMG_20240108_155516_140-removebg-preview.png" class="img-fluid about-image">
       </div>
       <div class="col-lg-7 ">
         <h1>About Me.</h1>
@@ -80,6 +84,21 @@ Let’s build something great together.</p>
     <p>Bootstrap <span class="text-white float-right">85%</span></p>
   </div>
 </div>
+<div class="progress my-3">
+  <div class="pro-value4">
+    <p>Python <span class="text-white float-right">50%</span></p>
+  </div>
+</div>
+<div class="progress my-3">
+  <div class="pro-value5">
+    <p>Django <span class="text-white float-right">49%</span></p>
+  </div>
+</div>
+<div class="progress my-3">
+  <div class="pro-value6">
+    <p>wordpress/Elementor <span class="text-white float-right">90%</span></p>
+  </div>
+</div>
 <input type="button" class="btn1" value="Download CV">
 
 
@@ -87,11 +106,133 @@ Let’s build something great together.</p>
     </div>
   </div>
 </div>
+<!---serices section-->
+<div class="services py-1 bg-light" id="services">
+  <div class="container py-1">
+   <h1 class="text-center pb-5">Services</h1>
+   <div class="row pb-3">
+    <div class="col-lg-4 mb-3" >
+      <div class="card">
+        <div class="circle mt-3">
+          <span><i class="bi bi-laptop"></i></span>
+        </div>
+        <h2 class="text-center pb-2">Web Design</h2>
+        <p>I create modern, responsive, and user-friendly websites tailored to meet your business or personal needs.</p>
+      </div>
+    </div> 
+    <div class="col-lg-4 mb-3" >
+      <div class="card">
+        <div class="circle mt-3">
+          <span><i class="bi bi-gem"></i></span>
+        </div>
+        <h2 class="text-center pb-2">Graphic Design</h2>
+        <p>I design eye-catching graphics that communicate your brand’s message clearly and creatively with  impact and precision.</p>
+      </div>
+    </div> 
+    <div class="col-lg-4 mb-3" >
+      <div class="card">
+        <div class="circle mt-3">
+          <span><i class="bi bi-code-slash"></i></span>
+        </div>
+        <h2 class="text-center pb-2">Web Delopment</h2>
+        <p>I build dynamic and functional websites using modern web development technologies tailored to your needs.</p>
+      </div>
+    </div> 
+   </div>
+  </div>
+</div>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+
+<!---skills section-->
+<div class="skills py-5 bg-light" id="skills">
+  <div class="container py-1">
+    <h1 class="text-center pb-3">My Skills</h1>
+   <div class="row pb-3">
+  <div class="col-lg-2 pb-3 text-center me-3">
+    <img src="images/html5-1841458_1280.png"  class="img-fluid" style="height: 100px; object-fit: cover;">
+  </div>
+  <div class="col-lg-2 pb-3 text-center me-3">
+    <img src="images/css3-1841590_1280.png"  class="img-fluid" style="height: 100px; object-fit: cover;">
+  </div>
+  <div class="col-lg-2 pb-3 text-center me-3">
+    <img src="images/javascript-736400_1280.png"  class="img-fluid" style="height: 100px; object-fit: cover;">
+  </div>
+  <div class="col-lg-2 pb-3 text-center me-5">
+    <img src="images/python.webp"  class="img-fluid" style="height: 100px; object-fit: cover;">
+  </div>
+  <div class="col-lg-2 pb-3 text-center">
+    <img src="images/wordpress-2815925_1280.jpg"  class="img-fluid" style="height: 100px; object-fit: cover;">
+  </div>
+</div>
+
+     
+    </div>
+  </div>
+  <!---portfolio section -->
+  <div class="portfolio py-0 bg-light" id="Porfolio">
+    <div class="container py-5">
+      <h1 class="text-center mb-5">My Projects</h1>
+      <div class="row pb-3">
+        <div class="col-lg-3 text-center mt-5 pb-5 ">
+          <a href="" target="_blank"><img src="images/calculator.webp" class="img-fluid" style="height: 150px; object-fit: cover; "></a>
+        </div>
+         <div class="col-lg-3 text-center mt-5 pb-5">
+          <a href="" target="_blank"><img src="images/14682798_2002.i305.026_realistic weather forecast mobile application app.jpg" class="img-fluid" style="height: 150px; object-fit: cover;" ></a>
+        </div>
+        
+        
+       
+      </div>
+
+    </div>
+
+  </div>
+  <!--contact form-->
+  <div class="contact bg-light" id="contact">
+    <div class="container py-1">
+      <h1 class="text-center mb-5">Contact Me.</h1>
+      <div class="row pb-3">
+        <div class="col-lg-5">
+          <i class="fa-solid fa-location-dot"></i>
+          <h1>Adresss</h1>
+          <p>Nairobi,kenya</p>
+           <i class="fa-solid fa-envelope"></i>
+          <h1>Email</h1>
+         
+          <p>mbathaedward11@gmail.com</p>
+          <i class="fa-solid fa-phone-volume"></i>
+          <h1>Phone:</h1>
+          <p>0718054278</p>
+          <h1>Socials</h1>
+          <i class="fa-brands mt-3 fa-facebook"></i>
+          <i class="fa-brands me-3 fa-instagram"></i>
+          <i class="fa-brands me-3 fa-x-twitter"></i>
+        </div>
+         <div class="col-lg-5 mt-3">
+          <input class="form-control" type="text" placeholder="enter your name" required><br>
+          <input class="form-control" type="email" placeholder="enter your email" required><br>
+          <input class="form-control" type="number" placeholder="enter your phone number"><br>
+          <textarea name="" id="" cols="50" rows="8" placeholder="write message"></textarea><br>
+          <button class="bt3 mt-1">Send Message</button>
+
+         </div>
+         
+      </div>
+
+    </div>
+  </div>
+  <!---copyright section-->
+  <div class="copy">
+    <p>copyright<i class="fa-regular fa-copyright"></i></i> 2025 website by Edward</p>
+  </div>
+   <script src="https://kit.fontawesome.com/a3fc45af73.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
     
   </body>
 </html>
